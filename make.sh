@@ -1,13 +1,25 @@
 #!/bin/bash
 
 case $1 in
-  diff)
+  d|diff)
 	diff -u ./aliases ~/.aliases
-	diff -u ./zshrc ~/.zshrc
+	diff -u ./colors/ach.vim ~/.vim/colors/ach.vim
+	diff -u ./colors/default.vim ~/.vim/colors/default.vim
 	diff -u ./mlterm/main ~/.mlterm/main
 	diff -u ./mlterm/termcap ~/.mlterm/termcap
+	diff -u ./vimrc ~/.vimrc
+	diff -u ./zshrc ~/.zshrc
 	;;
-  install)
+  i|install)
+	install -d ~/.mlterm
+	install -d ~/.vim/colors
+	install -m0644 ./aliases ~/.aliases
+	install -m0644 ./colors/ach.vim ~/.vim/colors/ach.vim
+	install -m0644 ./colors/default.vim ~/.vim/colors/default.vim
+	install -m0644 ./mlterm/main ~/.mlterm/main
+	install -m0644 ./mlterm/termcap ~/.mlterm/termcap
+	install -m0644 ./vimrc ~/.vimrc
+	install -m0644 ./zshrc ~/.zshrc
 	;;
   *)
 	echo "Usage: $0 {diff|install}"
