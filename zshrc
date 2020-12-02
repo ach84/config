@@ -27,6 +27,8 @@ export PROMPT='%K{plain}%n@%m%k %B%F{214}%(4~|...|)%3~%F{white} %# %b%f%k'
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
