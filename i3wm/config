@@ -176,5 +176,4 @@ bar {
 	font pango:monospace Sans Mono 13
 }
 
-#exec --no-startup-id feh --bg-scale /usr/share/backgrounds/mate/nature/Dune.jpg
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gnome/SeaSunset.jpg

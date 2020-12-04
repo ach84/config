@@ -7,6 +7,7 @@ case $1 in
 	diff -u ./colors/default.vim ~/.vim/colors/default.vim
 	diff -u ./i3wm/config ~/.config/i3/config
 	diff -u ./i3wm/i3status.conf ~/.config/i3status/config
+	diff -u ./mlterm/key ~/.mlterm/key
 	diff -u ./mlterm/main ~/.mlterm/main
 	diff -u ./mlterm/termcap ~/.mlterm/termcap
 	diff -u ./vimrc ~/.vimrc
