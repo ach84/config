@@ -35,7 +35,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 TERM=xterm-256color
-PATH="/sbin:/usr/sbin:$PATH"
+PATH="$HOME/bin:/sbin:/usr/sbin:$PATH"
 
 # Use modern completion system
 autoload -Uz compinit
