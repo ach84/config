@@ -14,6 +14,7 @@ case $1 in
 	diff -u ./vimrc ~/.vimrc
 	diff -u ./zshrc ~/.zshrc
 	;;
+
   i|install)
 	install -d ~/bin
 	install -d ~/.config/i3
@@ -31,6 +32,7 @@ case $1 in
 	install -m0644 ./vimrc ~/.vimrc
 	install -m0644 ./zshrc ~/.zshrc
 	;;
+
   *)
 	echo "Usage: $0 {diff|install}"
 	exit 2
