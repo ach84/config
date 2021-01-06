@@ -3,6 +3,7 @@
 case $1 in
   d|diff)
 	diff -u ./aliases ~/.aliases
+	diff -u ./bin/term.sh ~/bin/term.sh
 	diff -u ./colors/ach.vim ~/.vim/colors/ach.vim
 	diff -u ./colors/default.vim ~/.vim/colors/default.vim
 	diff -u ./i3wm/config ~/.config/i3/config
@@ -14,10 +15,12 @@ case $1 in
 	diff -u ./zshrc ~/.zshrc
 	;;
   i|install)
+	install -d ~/bin
 	install -d ~/.config/i3
 	install -d ~/.config/i3status
 	install -d ~/.mlterm
 	install -d ~/.vim/colors
+	install -m0755 ./bin/term.sh ~/bin/term.sh
 	install -m0644 ./aliases ~/.aliases
 	install -m0644 ./colors/ach.vim ~/.vim/colors/ach.vim
 	install -m0644 ./colors/default.vim ~/.vim/colors/default.vim

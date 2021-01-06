@@ -32,7 +32,7 @@ title_align center
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec mlterm
+bindsym $mod+t exec term.sh
 
 # calendar
 bindsym $mod+c exec zenity --calendar --width=600 --height=300
