@@ -8,7 +8,7 @@ git_diff ()
 
 git_status ()
 {
-	git status -s --untracked-files=no
+	git status --untracked-files=no
 	exit 0
 }
 
